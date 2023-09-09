@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import BookList from './components/13_BookListRendering';
 
 // import Welcome from './components/Welcome';
 
@@ -11,7 +12,8 @@ import './App.css';
 
 // import ParentComponent from './components/10_MethodAsProp';
 
-import ConditionalRenderingExample from './components/12_ConditionalRendering';
+// import ConditionalRenderingExample from './components/12_ConditionalRendering';
+
 
 
 
@@ -26,7 +28,9 @@ function App() {
      <Greet name="Rahul" lastName="Gandhi"></Greet>
      <HookCounter1></HookCounter1> */}
 
-<ConditionalRenderingExample></ConditionalRenderingExample>
+{/* <ConditionalRenderingExample></ConditionalRenderingExample> */}
+
+<BookList></BookList>
 
  {/* <ParentComponent></ParentComponent> */}
     
