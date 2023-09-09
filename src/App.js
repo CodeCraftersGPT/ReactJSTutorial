@@ -1,15 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Welcome from './components/Welcome';
+// import Welcome from './components/Welcome';
 
-import { Greet } from './components/Greet';
+// import { Greet } from './components/Greet';
 
-import HookCounter1 from './components/HookCounter1';
+// import HookCounter1 from './components/HookCounter1';
 
-import User from './components/User';
+// import User from './components/User';
 
-import ParentComponent from './components/10_MethodAsProp';
+// import ParentComponent from './components/10_MethodAsProp';
+
+import ConditionalRenderingExample from './components/12_ConditionalRendering';
 
 
 
@@ -24,7 +26,9 @@ function App() {
      <Greet name="Rahul" lastName="Gandhi"></Greet>
      <HookCounter1></HookCounter1> */}
 
- <ParentComponent></ParentComponent>
+<ConditionalRenderingExample></ConditionalRenderingExample>
+
+ {/* <ParentComponent></ParentComponent> */}
     
     </div>
   );
