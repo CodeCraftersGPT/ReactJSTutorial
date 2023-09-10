@@ -1,15 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import PostList from './components/19_useEffect_Fetch';
-
-
-
-
+import Post from './components/21_axios_react';
 
 function App() {
   return (
     <div className="App" >
-   <PostList/>
+      <Post/>
     </div>
   );
 }
