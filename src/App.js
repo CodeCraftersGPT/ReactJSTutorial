@@ -1,6 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import UserProvider, { UserProfile } from './components/useContextExample/UserProvider';
+import { Routes,Route } from 'react-router-dom';
+import Home from './components/Routing/Home';
+import About from './components/Routing/About';
+// import ThemeProvider, { ThemeProfile } from './components/useContextExample/UserProvider';
+// // import UserProvider, { UserProfile } from './components/useContextExample/UserProvider';
+
+
 
 
 
@@ -9,12 +15,17 @@ import UserProvider, { UserProfile } from './components/useContextExample/UserPr
 function App() {
   return (
     <div className="App" >
-      <UserProvider>
+      <Routes>
+         <Route path="/" element={<Home />} />
+         <Route path="/about" element={<About />} /> 
+      </Routes>
+      {/* <ThemeProvider>
       <div className="App">
         <h1>use Context Example</h1>
-        <UserProfile />
+        <ThemeProfile />
       </div>
-      </UserProvider>
+      </ThemeProvider> */}
+     
     </div>
   );
 }
