@@ -1,11 +1,20 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link,NavLink} from 'react-router-dom'
 
 export default function NavBar() {
+
+  const navLinkStyles = ()=>{
+    return {
+      fontWeight:'bold',
+      textDecoration:'none',
+      padding:'1em'
+    }
+  }
+
   return (
     <nav>
-        <Link to="/" style={{padding:"1em"}}>Home</Link>
-        <Link to="/about">About</Link>
+        <NavLink to="/" style={navLinkStyles}>Home</NavLink>
+        <NavLink to="/about">About</NavLink>
     </nav>
   )
 }
