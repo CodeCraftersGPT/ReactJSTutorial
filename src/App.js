@@ -1,13 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-import NameCounterComponent from './components/22_NameCounter_Component';
+import UserProvider, { UserProfile } from './components/useContextExample/UserProvider';
+
+
 
 
 
 function App() {
   return (
     <div className="App" >
-<NameCounterComponent></NameCounterComponent>
+      <UserProvider>
+      <div className="App">
+        <h1>use Context Example</h1>
+        <UserProfile />
+      </div>
+      </UserProvider>
     </div>
   );
 }
