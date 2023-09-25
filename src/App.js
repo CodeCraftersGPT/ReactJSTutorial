@@ -5,17 +5,19 @@ import Home from './components/Routing/Home';
 import About from './components/Routing/About';
 import NavBar from './components/Routing/NavBar';
 import Order from './components/Routing/Order';
+import Test from './components/Test';
 
 
 function App() {
   return (
     <div className="App" >
-      <NavBar></NavBar>
+      <Test/>
+      {/* <NavBar></NavBar>
       <Routes>
          <Route path="/" element={<Home />} />
          <Route path="/about" element={<About />} /> 
          <Route path="/order" element={<Order />} /> 
-      </Routes>
+      </Routes> */}
      
     </div>
    
