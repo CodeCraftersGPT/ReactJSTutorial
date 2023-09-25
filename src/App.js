@@ -6,12 +6,15 @@ import About from './components/Routing/About';
 import NavBar from './components/Routing/NavBar';
 import Order from './components/Routing/Order';
 import Test from './components/Test';
+import { formToJSON } from 'axios';
+import LifecycleExample from './components/Class/28_Class_LifeCycle.js';
 
 
 function App() {
   return (
     <div className="App" >
-      <Test/>
+      <LifecycleExample/>
+      
       {/* <NavBar></NavBar>
       <Routes>
          <Route path="/" element={<Home />} />
