@@ -8,12 +8,15 @@ import Order from './components/Routing/Order';
 import Test from './components/Test';
 import { formToJSON } from 'axios';
 import LifecycleExample from './components/Class/28_Class_LifeCycle.js';
+import ShoppingCart from './components/useReducer/ShoppingCart';
+
 
 
 function App() {
   return (
     <div className="App" >
-      <LifecycleExample/>
+      <ShoppingCart/>
+      {/* <LifecycleExample/> */}
       
       {/* <NavBar></NavBar>
       <Routes>
