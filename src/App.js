@@ -9,13 +9,24 @@ import Test from './components/Test';
 import { formToJSON } from 'axios';
 import LifecycleExample from './components/Class/28_Class_LifeCycle.js';
 import ShoppingCart from './components/useReducer/ShoppingCart';
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './components/React-Redux/store';
+import ProductList from './components/React-Redux/ProductList';
+import Cart from './components/React-Redux/Cart';
 
 
 
 function App() {
   return (
     <div className="App" >
-      <ShoppingCart/>
+<Provider store={store}>
+<div className="App">
+<ProductList />
+<Cart />
+</div>
+</Provider>
+      {/* <ShoppingCart/> */}
       {/* <LifecycleExample/> */}
       
       {/* <NavBar></NavBar>
