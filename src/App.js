@@ -1,18 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import NameCounter from './components/useEffect/33_useEffect_NameCounter';
-// import registration form
-import RegistrationForm from './components/23_RegistrationForm';
-import ParentComponent from './components/useCallBackAndMemo/ParentComponent';
-
-
+import SimpleGreet from './components/1_SimpleGreet';
+import ClassGreet from './components/3_ClassGreet';
 
 
 function App() {
   return (
    <div>
-      <ParentComponent/>
-   {/* <RegistrationForm/> */}
+    <SimpleGreet/>
+    <ClassGreet name="Sachin" lastName="Tendulkar"/>
+
    </div>
    
   );
