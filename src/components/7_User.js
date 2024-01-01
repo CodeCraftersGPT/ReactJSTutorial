@@ -3,14 +3,10 @@ import react,{useState} from 'react';
 export default function User() {
     const [name,setName] = useState({firstName:'Elon', lastName:'Musk'})
 
-
-
-
     function updateFirstName(e){
         const nameValue = e.target.value;
         setName({...name,firstName:nameValue});
     }
-
 
     function updateLastName(e){
         const nameValue = e.target.value;
