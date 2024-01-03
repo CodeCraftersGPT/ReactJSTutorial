@@ -3,20 +3,19 @@ import './App.css';
 import SimpleGreet from './components/1_SimpleGreet';
 import ClassGreet from './components/3_ClassGreet';
 import ParentComponent from './components/8_MethodAsProp';
-import UserForm from './components/LiftingStateUp/WithoutLiftState/UserForm';
-import UserFormLS from './components/LiftingStateUp/WithStateLift/UserformLS';
+
+import PostsComponent from './components/fetchandaxios/26_axios_async';
 
 
 
 function App() {
   return (
    <div>
-    {/* <SimpleGreet/>
-    <ClassGreet name="Sachin" lastName="Tendulkar"/>
-    <ParentComponent/> */}
+  
+   
+    <PostsComponent/>
 
-    {/* <UserForm/> */}
-    <UserFormLS/>
+
 
 
 
