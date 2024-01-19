@@ -5,20 +5,17 @@ import ClassGreet from './components/3_ClassGreet';
 import ParentComponent from './components/8_MethodAsProp';
 
 import PostsComponent from './components/fetchandaxios/26_axios_async';
+import NameCounter from './components/useEffect/33_useEffect_NameCounter';
+import DashboardComponent from './components/useContextExample/PropertyDrilling/DashBoardComponent';
 
 
 
 function App() {
+
+  const theme = 'dark';
   return (
    <div>
-  
-   
-    <PostsComponent/>
-
-
-
-
-
+    <DashboardComponent theme={theme} />
    </div>
    
   );
