@@ -6,7 +6,9 @@ import ParentComponent from './components/8_MethodAsProp';
 
 import PostsComponent from './components/fetchandaxios/26_axios_async';
 import NameCounter from './components/useEffect/33_useEffect_NameCounter';
-import DashboardComponent from './components/useContextExample/PropertyDrilling/DashBoardComponent';
+import ThemeContext from './components/useContextExample/ThemedContext/ThemeContext';
+import DashboardComponent from './components/useContextExample/ThemedContext/DashBoardComponent';
+
 
 
 
@@ -15,7 +17,9 @@ function App() {
   const theme = 'dark';
   return (
    <div>
-    <DashboardComponent theme={theme} />
+     <ThemeContext.Provider value={theme}>
+      <DashboardComponent />
+    </ThemeContext.Provider>
    </div>
    
   );
